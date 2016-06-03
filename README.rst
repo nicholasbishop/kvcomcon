@@ -1,4 +1,4 @@
-kvcomcon: key-value-comment config.
+kvcomcon: key-value-comment config
 
 Example:
 ::

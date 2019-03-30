@@ -21,7 +21,7 @@ class TestKvComCon(TestCase):
                 path = os.path.join(self.script_dir, 'invalid.config')
                 list(config_from_path(path))
             except ConfigError as err:
-                self.assertEqual(err.message,
+                self.assertEqual(str(err),
                                  'error parsing {} line 2'.format(path))
                 self.assertEqual(err.filename, path)
                 self.assertEqual(err.line_number, 2)
